@@ -1,0 +1,39 @@
+
+[ambari_master]
+ec2-52-33-137-36.us-west-2.compute.amazonaws.com
+
+[metron_hbase_setup]
+# requires an hbase client
+ec2-52-35-145-173.us-west-2.compute.amazonaws.com
+
+[metron_kafka_setup]
+# requires a kafka client
+ec2-52-10-241-100.us-west-2.compute.amazonaws.com
+
+[enrichment]
+# requires a storm client
+ec2-52-10-89-79.us-west-2.compute.amazonaws.com
+
+[search]
+# elasticsearch nodes
+ec2-52-41-44-92.us-west-2.compute.amazonaws.com
+ec2-52-41-44-206.us-west-2.compute.amazonaws.com
+
+[web]
+ec2-52-10-180-19.us-west-2.compute.amazonaws.com
+
+[pcap_server]
+# requires an hdfs client
+ec2-52-41-7-254.us-west-2.compute.amazonaws.com
+
+[mysql]
+ec2-52-10-180-19.us-west-2.compute.amazonaws.com
+
+[metron:children]
+enrichment
+search
+web
+mysql
+metron_kafka_setup
+metron_hbase_setup
+pcap_server
