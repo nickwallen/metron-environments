@@ -29,7 +29,6 @@ ip-205-232-136.dqa.capitalone.com
 enrichment
 search
 web
-sensors
 mysql
 metron_kafka_setup
 metron_hbase_setup
