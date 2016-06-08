@@ -31,7 +31,9 @@ export METRON_HOME=~/Development/incubator-metron
 To create an environment in AWS that can be used for testing these scripts, run the following command to lay down an environment with HDP, Elasticsearch, and MySQL that is ready to install Metron.
 
 ```
+cd metron-deployments/amazon-ec2
+export EC2_INI_PATH=conf/ec2.ini
 ansible-playbook -i ec2.py playbook.yml \
-  --tags="ambari,elasticsearch,mysql-server,mysql-client" \
+  --tags="ec2,ambari,elasticsearch,mysql-server,mysql-client" \
   --extra-vars="env=my-metron-env"
 ```
