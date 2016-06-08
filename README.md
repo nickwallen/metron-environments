@@ -12,18 +12,22 @@ export METRON_HOME=~/Development/incubator-metron
 
 (2) Create a new working directory following the example of `metron-dev` for each separate environment that Metron needs deployed to.  For example, you might maintain separate Dev, QA, and Production environments.
 
+```
+mkdir metron-production
+```
+
 (3) Edit `ansible.cfg` to enable connectivity to your target environment.  This might require specifying the path to a different SSH key or a different user account.
 
 (4) Run the validation script to validate connectivity to the test environment.  If connectivity fails, you probably need to tweak `ansible.cfg`.
 
 ```
-./validate.sh metron-dev
+./validate.sh metron-production
 ```
 
 (5) Deploy Metron to the target environment.
 
 ```
-./run.sh metron-dev
+./run.sh metron-production
 ```
 
 ## Testing

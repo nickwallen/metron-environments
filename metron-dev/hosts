@@ -2,11 +2,11 @@
 [ambari_master]
 ec2-52-33-137-36.us-west-2.compute.amazonaws.com
 
-[metron_hbase_setup]
+[metron_hbase_tables]
 # requires an hbase client
 ec2-52-35-145-173.us-west-2.compute.amazonaws.com
 
-[metron_kafka_setup]
+[metron_kafka_topics]
 # requires a kafka client
 ec2-52-10-241-100.us-west-2.compute.amazonaws.com
 
@@ -34,6 +34,6 @@ enrichment
 search
 web
 mysql
-metron_kafka_setup
-metron_hbase_setup
+metron_kafka
+metron_hbase
 pcap_server

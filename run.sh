@@ -24,6 +24,6 @@ fi
 EXTRA_ARGS="${@:2}"
 ansible-playbook \
       $METRON_HOME/metron-deployment/playbooks/metron_full_install.yml \
-      --tags="metron-hbase,metron-kafka,enrichment,elasticsearch_templates" \
+      --tags="metron-hbase-tables,metron-kafka-topics,enrichment,elasticsearch_templates" \
       -i $INVENTORY_PATH \
       $EXTRA_ARGS

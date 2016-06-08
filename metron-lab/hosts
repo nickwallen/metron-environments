@@ -2,10 +2,10 @@
 [ambari_master]
 ip-205-232-134.dqa.capitalone.com
 
-[metron_hbase_setup]
+[metron_hbase_tables]
 ip-205-232-137.dqa.capitalone.com
 
-[metron_kafka_setup]
+[metron_kafka_topics]
 ip-205-232-137.dqa.capitalone.com
 
 # the host where all metron libraries and deployment scripts get laid down
@@ -30,6 +30,6 @@ enrichment
 search
 web
 mysql
-metron_kafka_setup
-metron_hbase_setup
+metron_kafka
+metron_hbase
 pcap_server
