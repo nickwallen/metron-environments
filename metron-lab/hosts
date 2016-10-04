@@ -1,29 +1,29 @@
 
 [ambari_master]
-ip-205-232-134.dqa.capitalone.com
+ip-205-232-134.dqa.foo.com
 
 [metron_hbase_tables]
-ip-205-232-137.dqa.capitalone.com
+ip-205-232-137.dqa.foo.com
 
 [metron_kafka_topics]
-ip-205-232-137.dqa.capitalone.com
+ip-205-232-137.dqa.foo.com
 
 # the host where all metron libraries and deployment scripts get laid down
 [enrichment]
-ip-205-238-151.dqa.capitalone.com
+ip-205-238-151.dqa.foo.com
 
 [search]
-ip-205-240-175.dqa.capitalone.com
-ip-205-240-177.dqa.capitalone.com
+ip-205-240-175.dqa.foo.com
+ip-205-240-177.dqa.foo.com
 
 [web]
-ip-205-247-9.dqa.capitalone.com
+ip-205-247-9.dqa.foo.com
 
 [pcap_server]
-ip-205-232-136.dqa.capitalone.com
+ip-205-232-136.dqa.foo.com
 
 [mysql]
-ip-205-232-136.dqa.capitalone.com
+ip-205-232-136.dqa.foo.com
 
 [metron:children]
 enrichment
